@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #a9508b;
+    height: 80px;
+    h1 {
+        color: #a9508b;
+        margin-left: 20px;
+        span {
+            color:white;
+        }
+    }
+    li {
+        display: inline;
+        padding-right: 20px;
+        color: white;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    #about {
+        color: #a9508b;
+    }
+}
