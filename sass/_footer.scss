@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  img {
+    width: 10%;
+    padding-bottom: 20px;
+  }
+  p {
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 800px) {
+   footer {
+       justify-items: center;
+        img {
+          width: 15%;
+    }
+   }
+}
+@media only screen and (max-width: 425px) {
+    footer {
+         img {
+           width: 25%;
+     }
+    }
+ }

@@ -359,6 +359,11 @@ header #home {
   color: #a9508b;
 }
 
+@media only screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 24px;
+  }
+}
 @media only screen and (max-width: 800px) {
   header {
     height: 60px;
@@ -368,6 +373,25 @@ header #home {
   }
   header a {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header {
+    display: grid;
+    justify-content: center;
+    height: 80px;
+  }
+  header h1 {
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+  header li {
+    padding: 0 20px;
+    text-align: center;
+  }
+  header a {
+    text-decoration: none;
+    color: white;
   }
 }
 * {
@@ -390,7 +414,8 @@ body {
   background: url("showcase.jpg") center;
   color: white;
 }
-.div1 h1, .div1 p {
+.div1 h1,
+.div1 p {
   z-index: 1;
   text-align: center;
 }
@@ -446,7 +471,8 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.div3 section h3, .div3 section p {
+.div3 section h3,
+.div3 section p {
   text-align: center;
 }
 .div3 section img {
@@ -487,11 +513,74 @@ body {
     margin-left: 0;
   }
 }
+@media only screen and (max-width: 425px) {
+  .div1 h1 {
+    font-size: 25px;
+  }
+  .div1 p {
+    font-size: 15px;
+  }
+
+  .div2 {
+    height: 100px;
+  }
+  .div2 h2 {
+    font-size: 18px;
+  }
+  .div2 input {
+    width: 200px;
+  }
+
+  .div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    height: auto;
+  }
+  .div3 section img {
+    width: 15%;
+    margin: 25px 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .div1 h1 {
+    font-size: 20px;
+  }
+  .div1 p {
+    font-size: 14px;
+    width: 85%;
+  }
+
+  .div2 {
+    height: 80px;
+  }
+  .div2 h2 {
+    font-size: 16px;
+  }
+  .div2 input {
+    width: 160px;
+    height: 25px;
+    font-size: 10px;
+    text-indent: 0.5em;
+  }
+  .div2 button {
+    font-size: 10px;
+    height: 25px;
+    width: 70px;
+    margin-right: 0 !important;
+  }
+  .div2 li {
+    padding: 0 10px;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 footer img {
   width: 10%;
@@ -502,6 +591,20 @@ footer p {
   padding-top: 35px;
   padding-bottom: 5px;
   font-size: small;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    justify-items: center;
+  }
+  footer img {
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  footer img {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

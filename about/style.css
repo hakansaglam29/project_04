@@ -359,6 +359,41 @@ header #about {
   color: #a9508b;
 }
 
+@media only screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header {
+    height: 60px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  header a {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header {
+    display: grid;
+    justify-content: center;
+    height: 80px;
+  }
+  header h1 {
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+  header li {
+    padding: 0 20px;
+    text-align: center;
+  }
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -442,6 +477,109 @@ body {
   line-height: 1.2em;
 }
 
+@media only screen and (max-width: 1440px) {
+  .div2 {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .div2 {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .div1 {
+    height: 80px;
+  }
+  .div1 h2 {
+    font-size: 18px;
+  }
+  .div1 input {
+    width: 200px;
+  }
+
+  .div2 {
+    height: auto;
+  }
+  .div2 .aboutus {
+    margin-right: 10px;
+  }
+  .div2 .whatwedo {
+    margin-left: 0;
+  }
+  .div2 p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .div1 {
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .div1 h2 {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .div1 {
+    height: 100px;
+  }
+  .div1 h2 {
+    font-size: 18px;
+  }
+  .div1 input {
+    width: 200px;
+  }
+
+  .div2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .div2 .aboutus {
+    margin: 10px 10px 0;
+  }
+  .div2 .aboutus p {
+    font-size: 15px;
+  }
+  .div2 .whatwedo {
+    margin: 0 10px 10px;
+    margin-top: 0;
+  }
+  .div2 .whatwedo p {
+    font-size: 15px;
+  }
+  .div2 .whatwedo .section3 {
+    margin-top: 0;
+    background-color: white;
+    color: black;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 425px) and (max-width: 320px) {
+  .div1 {
+    height: 80px;
+  }
+  .div1 h2 {
+    font-size: 16px;
+  }
+  .div1 input {
+    width: 160px;
+    height: 25px;
+    font-size: 10px;
+    text-indent: 0.5em;
+  }
+  .div1 button {
+    font-size: 10px;
+    height: 25px;
+    width: 70px;
+    margin-right: 0 !important;
+  }
+  .div1 li {
+    padding: 0 10px;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -457,6 +595,26 @@ footer p {
   padding-top: 35px;
   padding-bottom: 5px;
   font-size: small;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  footer {
+    height: auto;
+    justify-items: center;
+  }
+  footer img {
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  footer img {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
